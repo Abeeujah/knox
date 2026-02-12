@@ -1,0 +1,111 @@
+---
+const sdgCards = [
+    {
+        number: 1,
+        label: "SDG-1",
+        title: "Poverty Eradication",
+        description:
+            "Working to eliminate extreme poverty through sustainable livelihood programs and community empowerment initiatives.",
+        bg: "bg-brand-cream",
+        text: "text-brand-black",
+        borderColor: "border-brand-black/20",
+    },
+    {
+        number: 2,
+        label: "SDG-3",
+        title: "Good Health and Well-being",
+        description:
+            "Improving healthcare access and promoting well-being for all ages through medical outreach and health education.",
+        bg: "bg-brand-maroon",
+        text: "text-white",
+        borderColor: "border-white/30",
+    },
+    {
+        number: 3,
+        label: "SDG-4",
+        title: "Quality Education",
+        description:
+            "Ensuring inclusive and equitable quality education and promoting lifelong learning opportunities for all.",
+        bg: "bg-brand-purple",
+        text: "text-brand-black",
+        borderColor: "border-brand-black/20",
+    },
+    {
+        number: 4,
+        label: "SDG-5",
+        title: "Gender Equality",
+        description:
+            "Advancing gender equality and empowering all women and girls through advocacy and support programs.",
+        bg: "bg-brand-pink",
+        text: "text-brand-black",
+        borderColor: "border-brand-black/20",
+    },
+    {
+        number: 5,
+        label: "SDG-8",
+        title: "Economic Growth",
+        description:
+            "Promoting sustained, inclusive economic growth, full employment, and decent work for all community members.",
+        bg: "bg-brand-green",
+        text: "text-brand-black",
+        borderColor: "border-brand-black/20",
+    },
+    {
+        number: 6,
+        label: "SDG-17",
+        title: "Partnerships for the Goals",
+        description:
+            "Strengthening global partnerships and collaborations to achieve sustainable development goals together.",
+        bg: "bg-brand-blue",
+        text: "text-brand-black",
+        borderColor: "border-brand-black/20",
+    },
+];
+---
+
+<section id="sdg-focus" class="py-16 bg-white">
+    <div class="max-w-300 mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="mb-12 md:mb-16">
+            <span
+                class="text-brand-red font-semibold tracking-wider text-sm uppercase"
+                >Our SDG Focus Areas</span
+            >
+            <h2
+                class="text-4xl md:text-[40px] font-bold text-brand-black mt-2 leading-tight"
+            >
+                Our Path to Sustainable Impact
+            </h2>
+        </div>
+
+        <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
+        >
+            {
+                sdgCards.map((card) => (
+                    <div
+                        class={`${card.bg} ${card.text} rounded-2xl p-6 md:p-8 flex flex-col justify-between`}
+                    >
+                        <div>
+                            <div
+                                class={`w-10 h-10 rounded-full border border-brand-red flex items-center justify-center font-bold text-sm mb-5`}
+                            >
+                                {card.number}
+                            </div>
+                            <h3 class="text-lg md:text-xl font-bold mb-3">
+                                {card.title}
+                            </h3>
+                            <p class="text-sm md:text-base leading-relaxed opacity-80">
+                                {card.description}
+                            </p>
+                        </div>
+                        <span
+                            class={`text-base text-${card.bg === "bg-brand-maroon" ? "white" : "brand-black"} font-bold mt-6`}
+                        >
+                            {card.label}
+                        </span>
+                    </div>
+                ))
+            }
+        </div>
+    </div>
+</section>

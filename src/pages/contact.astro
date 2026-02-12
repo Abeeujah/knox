@@ -1,0 +1,317 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="Contact Us - Naskaxe Humanitarian Foundation">
+    <Header activePage="Contact" />
+    <main class="pt-20">
+        <!-- Contact Cards Section -->
+        <section class="bg-brand-white pt-20 pb-12">
+            <div class="max-w-300 mx-auto px-4 sm:px-6 lg:px-8">
+                <p
+                    class="text-brand-red text-base font-medium text-center mb-16"
+                >
+                    Contact us
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Email Card -->
+                    <div
+                        class="bg-brand-cream rounded-2xl p-8 text-center flex flex-col items-center gap-4"
+                    >
+                        <div
+                            class="w-12 h-12 rounded-full border-2 border-brand-black flex items-center justify-center"
+                        >
+                            <svg
+                                width="20"
+                                height="20"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="#330A04"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <rect x="2" y="4" width="20" height="16" rx="2"
+                                ></rect>
+                                <path d="M22 4L12 13L2 4"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-black my-0">
+                            Email
+                        </h3>
+                        <p class="text-gray-text text-base my-0">
+                            Our friendly team is here to help.
+                        </p>
+                        <p class="font-bold text-base text-brand-black my-0">
+                            info@naskaxefoundation.com
+                        </p>
+                    </div>
+
+                    <!-- Office Card -->
+                    <div
+                        class="bg-brand-maroon rounded-2xl p-8 text-center flex flex-col items-center gap-4"
+                    >
+                        <div
+                            class="w-12 h-12 rounded-full border-2 border-brand-white flex items-center justify-center"
+                        >
+                            <svg
+                                width="20"
+                                height="20"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="white"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <path
+                                    d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                                ></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-white my-0">
+                            Office
+                        </h3>
+                        <p class="text-brand-white text-base my-0">
+                            Come say hello at our office HQ.
+                        </p>
+                        <p class="font-bold text-base text-brand-white my-0">
+                            SUITE A205, A A RANO PLAZA, ALONG CITY GATE, Airport
+                            Rd, 900107, Abuja
+                        </p>
+                    </div>
+
+                    <!-- Phone Card -->
+                    <div
+                        class="bg-brand-lavender rounded-2xl p-8 text-center flex flex-col items-center gap-4"
+                    >
+                        <div
+                            class="w-12 h-12 rounded-full border-2 border-brand-black flex items-center justify-center"
+                        >
+                            <svg
+                                width="20"
+                                height="20"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="#330A04"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"
+                                ></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-black my-0">
+                            Phone
+                        </h3>
+                        <p class="text-brand-black text-base my-0">
+                            Mon-Fri from 8am to 5pm.
+                        </p>
+                        <p class="font-bold text-base text-brand-black my-0">
+                            +234 07068069811 <br />
+                            +234 09039301500
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="bg-white py-20 md:py-28">
+            <div class="max-w-300 mx-auto px-4 sm:px-6 lg:px-8">
+                <div
+                    class="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16 items-start"
+                >
+                    <!-- Left Side -->
+                    <div class="lg:col-span-2 md:flex flex-col gap-8 hidden">
+                        <h2
+                            class="text-4xl md:text-5xl font-bold text-brand-black leading-tight mb-0"
+                        >
+                            We'd love to hear from you.
+                        </h2>
+                        <svg
+                            class="self-end hidden lg:block"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="194"
+                            height="38"
+                            viewBox="0 0 194 38"
+                            fill="none"
+                        >
+                            <path
+                                d="M1.5 36.1097C21.2479 29.1806 40.5051 22.791 61.3947 19.8946C93.5882 15.4308 126.983 13.5804 159.496 13.3072C160.402 13.2996 178.281 12.6619 178.245 12.5977C176.236 8.98087 170.599 6.1226 166.996 4.69287C164.697 3.78086 155.624 1.4592 156.203 1.50051C166.339 2.22456 175.951 3.71396 185.491 7.32783C189.227 8.74309 195.904 10.3101 190.052 13.4085C177.159 20.234 164.126 26.8526 151.085 33.3734"
+                                stroke="black"
+                                stroke-width="3"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg>
+                        <svg
+                            class="self-end lg:hidden -mt-16"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="36"
+                            height="49"
+                            viewBox="0 0 36 49"
+                            fill="none"
+                        >
+                            <path
+                                d="M34.9773 0.971672C33.1797 7.9136 31.2843 14.4924 27.6652 19.5351C22.0877 27.3065 15.225 33.9253 7.95146 39.5762C7.7489 39.7336 3.938 43.094 3.97095 43.1212C5.82825 44.6577 8.215 45.1858 9.58665 45.3173C10.4616 45.4012 13.4204 45.0685 13.2731 45.1451C10.6919 46.487 7.93345 47.3426 4.36797 47.0838C2.97166 46.9825 0.849162 47.3007 0.977124 44.7011C1.25901 38.9745 1.65287 33.3315 2.08661 27.7378"
+                                stroke="black"
+                                stroke-width="1.94281"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg>
+                    </div>
+
+                    <!-- Right Side (Form) -->
+                    <div class="lg:col-span-3">
+                        <form
+                            class="border border-gray-border rounded-2xl bg-white p-6 md:p-10 flex flex-col gap-6"
+                        >
+                            <div
+                                class="lg:col-span-2 flex flex-col justify-center gap-0 md:hidden"
+                            >
+                                <h2
+                                    class="text-xl font-bold text-brand-black leading-tight m-0"
+                                >
+                                    We'd love to hear from you.
+                                </h2><svg
+                                    class="self-end -mt-4 lg:hidden"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="36"
+                                    height="49"
+                                    viewBox="0 0 36 49"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M34.9773 0.971672C33.1797 7.9136 31.2843 14.4924 27.6652 19.5351C22.0877 27.3065 15.225 33.9253 7.95146 39.5762C7.7489 39.7336 3.938 43.094 3.97095 43.1212C5.82825 44.6577 8.215 45.1858 9.58665 45.3173C10.4616 45.4012 13.4204 45.0685 13.2731 45.1451C10.6919 46.487 7.93345 47.3426 4.36797 47.0838C2.97166 46.9825 0.849162 47.3007 0.977124 44.7011C1.25901 38.9745 1.65287 33.3315 2.08661 27.7378"
+                                        stroke="black"
+                                        stroke-width="1.94281"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                </svg>
+                            </div>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div class="flex flex-col gap-1.5">
+                                    <label
+                                        for="first-name"
+                                        class="text-sm font-medium tex-brandt-black"
+                                        >First name</label
+                                    >
+                                    <input
+                                        type="text"
+                                        id="first-name"
+                                        name="first-name"
+                                        placeholder="First name"
+                                        class="border border-gray-border rounded-lg px-4 py-2.5 text-sm bg-white outline-none focus:border-brand-red transition-colors"
+                                    />
+                                </div>
+                                <div class="flex flex-col gap-1.5">
+                                    <label
+                                        for="last-name"
+                                        class="text-sm font-medium text-brand-black"
+                                        >Last name</label
+                                    >
+                                    <input
+                                        type="text"
+                                        id="last-name"
+                                        name="last-name"
+                                        placeholder="Last name"
+                                        class="border border-gray-border rounded-lg px-4 py-2.5 text-sm bg-white outline-none focus:border-brand-red transition-colors"
+                                    />
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col gap-1.5">
+                                <label
+                                    for="email"
+                                    class="text-sm font-medium text-brand-black"
+                                    >Email</label
+                                >
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="agboolaademichael@gmail.com"
+                                    class="border border-gray-border rounded-lg px-4 py-2.5 text-sm bg-white outline-none focus:border-brand-red transition-colors"
+                                />
+                            </div>
+
+                            <div class="flex flex-col gap-1.5">
+                                <label
+                                    for="phone"
+                                    class="text-sm font-medium text-brand-black"
+                                    >Phone number</label
+                                >
+                                <div
+                                    class="flex border-gray-border rounded-lg overflow-hidden focus-within:border-brand-red transition-colors"
+                                >
+                                    <span
+                                        class="flex items-center gap-1.5 px-3 bg-gray-50 border-r border-gray-border text-sm text-gray-text shrink-0"
+                                    >
+                                        <svg
+                                            width="20"
+                                            height="15"
+                                            viewBox="0 0 640 480"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <rect
+                                                width="213"
+                                                height="480"
+                                                fill="#008751"></rect>
+                                            <rect
+                                                x="213"
+                                                width="214"
+                                                height="480"
+                                                fill="#fff"></rect>
+                                            <rect
+                                                x="427"
+                                                width="213"
+                                                height="480"
+                                                fill="#008751"></rect>
+                                        </svg>
+                                        +234
+                                    </span>
+                                    <input
+                                        type="tel"
+                                        id="phone"
+                                        name="phone"
+                                        placeholder="Phone number"
+                                        class="flex-1 border border-gray-border rounded-r-lg px-4 py-2.5 text-sm bg-white outline-none focus:border-brand-red"
+                                    />
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col gap-1.5">
+                                <label
+                                    for="message"
+                                    class="text-sm font-medium text-brand-black"
+                                    >Message</label
+                                >
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    rows="5"
+                                    placeholder="Leave us a message..."
+                                    class="border border-gray-border rounded-lg px-4 py-2.5 text-sm bg-white outline-none resize-none focus:border-brand-red transition-colors"
+                                ></textarea>
+                            </div>
+
+                            <button
+                                type="submit"
+                                class="w-full bg-brand-red text-white font-medium text-base rounded-lg py-3 cursor-pointer transition-colors hover:bg-red-700"
+                            >
+                                Send message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <Footer />
+</Layout>

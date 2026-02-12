@@ -1,0 +1,67 @@
+---
+const initiatives = [
+    {
+        title: "Food For All",
+        image: "/foodforall.png",
+        description:
+            "Addressing hunger and malnutrition through sustainable agriculture programs and direct food assistance to vulnerable communities.",
+    },
+    {
+        title: "Quality Accessible Education",
+        image: "accessibleeducation.png",
+        description:
+            "Unlocking potential by providing access to quality education, resources, and mentorship for underprivileged youth.",
+    },
+    {
+        title: "Meeting Accommodation Needs",
+        image: "accomodationneeds.png",
+        description:
+            "Providing accessible and affordable housing solutions for displaced families and those living in inadequate conditions.",
+    },
+];
+---
+
+<section class="bg-brand-black py-15 md:py-16">
+    <div class="mx-auto max-w-300 px-6">
+        <div class="mb-12 md:text-right">
+            <span
+                class="text-xs font-semibold uppercase tracking-widest text-brand-red"
+            >
+                Our Initiatives
+            </span>
+            <h2
+                class="mt-3 text-3xl font-bold text-white md:text-[40px] md:leading-tight"
+            >
+                Transforming Lives Through Action
+            </h2>
+        </div>
+
+        <div class="grid gap-8 md:grid-cols-3">
+            {
+                initiatives.map((item) => (
+                    <div class="flex flex-col overflow-hidden rounded-2xl border border-[#333] bg-[#141414] p-4">
+                        <img
+                            class="w-full h-auto object-cover max-w-full"
+                            src={item.image}
+                            alt={item.title}
+                        />
+                        <div class="flex flex-1 flex-col gap-3">
+                            <h3 class="text-xl font-bold text-white leading-tight md:min-h-13 xl:min-h-auto line-clamp-2 mb-0">
+                                {item.title}
+                            </h3>
+                            <p class="text-sm leading-relaxed text-gray-300 line-clamp-3 md:min-h-18 xl:min-h-auto">
+                                {item.description}
+                            </p>
+                            <button
+                                type="button"
+                                class="mt-auto w-full rounded-lg border-2 border-brand-red bg-transparent px-6 py-3 text-sm font-semibold text-white transition-all hover:bg-brand-red hover:text-white cursor-pointer"
+                            >
+                                Donate
+                            </button>
+                        </div>
+                    </div>
+                ))
+            }
+        </div>
+    </div>
+</section>

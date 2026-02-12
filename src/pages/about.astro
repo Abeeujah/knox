@@ -1,0 +1,180 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="About Us - Naskaxe Humanitarian Foundation">
+    <Header activePage="About Us" />
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section class="bg-white py-20 md:py-28 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-300 mx-auto text-center">
+                <h1
+                    class="text-[32px] md:text-[52px] font-bold leading-tight tracking-tight"
+                >
+                    We're on a mission to make<br />
+                    <span class="relative inline-block px-1 isolate">
+                        the World
+                        <span
+                            class="absolute inset-0 -z-10 translate-y-1 scale-x-110 pointer-events-none"
+                        >
+                            <svg
+                                viewBox="0 0 240 49"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="w-full h-full preserve-aspect-none"
+                            >
+                                <path
+                                    d="M20.0034 23C21.183 20.9218 27.9297 20.9739 29.6671 20.7917C36.9339 20.0296 44.2087 20 51.5062 20C60.1482 20 68.7901 20 77.4321 20C85.4365 20 92.9152 21.9416 100.463 23.5833C107.683 25.1536 115.278 25.2518 122.6 26.8333C130.802 28.605 139.261 29 147.632 29C171.764 29 195.865 28.25 220.003 28.25"
+                                    stroke="#FFE353"
+                                    stroke-opacity="0.5"
+                                    stroke-width="40"
+                                    stroke-linecap="round"></path>
+                            </svg>
+                        </span>
+                    </span>
+                    a
+                    <span class="relative inline-block px-1 isolate"
+                        >Better
+                        <span
+                            class="absolute inset-0 -z-10 translate-y-1 scale-x-110 pointer-events-none"
+                        >
+                            <svg
+                                class="hidden md:block"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="152"
+                                height="57"
+                                viewBox="0 0 152 57"
+                                fill="none"
+                            >
+                                <path
+                                    d="M25.0049 26.4235C31.268 25.0934 37.2092 25.4518 43.6804 25.9037C50.5467 26.3831 57.6184 25.079 64.4455 26.7381C72.7408 28.7539 79.0811 32.1838 87.5588 31.9434C100.955 31.5637 113.923 27.7682 126.934 25.0051"
+                                    stroke="#59F2A5"
+                                    stroke-opacity="0.6"
+                                    stroke-width="50"
+                                    stroke-linecap="round"></path>
+                            </svg>
+                            <svg
+                                class="md:hidden"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="79"
+                                height="30"
+                                viewBox="0 0 79 30"
+                                fill="none"
+                            >
+                                <path
+                                    d="M12.958 13.6931C16.2037 13.0038 19.2825 13.1895 22.6359 13.4237C26.1942 13.6721 29.8588 12.9964 33.3968 13.8561C37.6955 14.9007 40.9812 16.6781 45.3745 16.5536C52.3165 16.3568 59.0366 14.3899 65.7792 12.958"
+                                    stroke="#59F2A5"
+                                    stroke-opacity="0.6"
+                                    stroke-width="25.9108"
+                                    stroke-linecap="round"></path>
+                            </svg>
+                        </span></span
+                    > place
+                </h1>
+                <div
+                    class="mt-6 mx-auto max-w-2xl text-lg text-start md:text-center text-gray-text leading-relaxed"
+                >
+                    <p>
+                        Naskaxe Humanitarian Foundation is a charitable
+                        organization that was established by the Naskaxe
+                        Conglomerate.
+                    </p>
+                    <p>
+                        With the goal of providing assistance and support to
+                        those in need. The Foundation endeavors to improve the
+                        lives of individuals and communities around the world
+                        through various initiatives aimed at providing access to
+                        essential resources and services.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vision & Mission Section -->
+        <section class="px-4 sm:px-6 lg:px-8 mb-20">
+            <div class="max-w-300 mx-auto grid md:grid-cols-2 gap-4 md:gap-0">
+                <div
+                    class="bg-white border border-[#DBE1E7] rounded-lg md:border-none p-8 md:p-20"
+                >
+                    <h2 class="text-2xl md:text-3xl font-bold mb-4">
+                        Our Vision
+                    </h2>
+                    <p class="text-gray-text leading-relaxed">
+                        An inclusive world where everyone has access to basic
+                        needs and the power to create positive change, built on
+                        a foundation of empathy, unity, and shared
+                        responsibility. Together, we can break down barriers.
+                    </p>
+                </div>
+                <div
+                    class="bg-brand-black rounded-lg md:border-none p-8 md:p-20"
+                >
+                    <h2 class="text-2xl md:text-3xl font-bold text-white mb-4">
+                        Our Mission
+                    </h2>
+                    <p class="text-white/80 leading-relaxed">
+                        We aim to empower communities and provide access to
+                        basic needs such as healthcare, education, food, and
+                        shelter to ensure that everyone can benefit from
+                        sustainable positive change globally.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Founder Section -->
+        <section class="bg-brand-black py-16 md:py-30 px-4 sm:px-6 lg:px-8">
+            <div
+                class="max-w-300 mx-auto grid md:grid-cols-2 gap-12 md:gap-16 items-center"
+            >
+                <div>
+                    <img
+                        class="w-full h-auto object-cover max-w-full"
+                        src="/fazazee.png"
+                        alt="Amb. Fazazee Nasiru Adeshina"
+                    />
+                    <p class="text-white/70 text-sm text-center mt-4">
+                        CEO NaskAxe Conglomerate
+                    </p>
+                </div>
+                <div>
+                    <span
+                        class="text-brand-red text-sm font-semibold uppercase tracking-wider"
+                        >Meet the Founder</span
+                    >
+                    <h2
+                        class="text-white text-[28px] md:text-[40px] font-bold mt-3 mb-6 leading-tight"
+                    >
+                        Amb. Fazazee Nasiru Adeshina
+                    </h2>
+                    <div class="space-y-5 text-white/80 leading-relaxed">
+                        <p>
+                            The man, renowned for his selfless devotion to
+                            aiding those in need, has dedicated his life to
+                            creating meaningful change in communities across the
+                            globe.
+                        </p>
+                        <p>
+                            He has provided sponsorships to those in need,
+                            funding education, healthcare, and essential
+                            services for countless individuals and families.
+                        </p>
+                        <p>
+                            His outstanding contributions have been recognized
+                            by the <strong class="text-white"
+                                >United Nations</strong
+                            >, where he was honored as a <strong
+                                class="text-white"
+                                >Humanitarian Ambassador</strong
+                            > for his tireless efforts in advancing sustainable development
+                            and human welfare.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <Footer />
+</Layout>
